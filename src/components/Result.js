@@ -17,7 +17,7 @@ const Result = ({secretNum,term}) => {
     if (term == secretNum) {
       const timer = setTimeout(() => {
         window.location.reload();
-      }, 5000);
+      }, 3000);
       return () => clearTimeout(timer); // Cleanup the timer if the component unmounts or updates
     }
   }, [term, secretNum]);
