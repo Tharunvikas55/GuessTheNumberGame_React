@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import Result from './components/Result';
 
-const secretNum=Math.floor(Math.random()* 15)+1;
+const secretNum=Math.floor(Math.random()* 10)+1;
 
 function App() {
   const[term,setTerm]=useState("")
