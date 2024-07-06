@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Result = ({secretNum,term}) => {
 
@@ -13,6 +13,14 @@ const Result = ({secretNum,term}) => {
     else
     res="Enter a valid input";
   }
+  useEffect(() => {
+    if (term == secretNum) {
+      const timer = setTimeout(() => {
+        window.location.reload();
+      }, 5000);
+      return () => clearTimeout(timer); // Cleanup the timer if the component unmounts or updates
+    }
+  }, [term, secretNum]);
   return (
     <div>
       <h3>You Guessed :{res}</h3>
