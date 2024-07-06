@@ -12,7 +12,7 @@ function App() {
   return (
     <div className='container'>
       <div className="head">
-        <label htmlFor='term' >Guess the Number Between 1 to 10</label>
+        <label htmlFor='term' >Guess the Number From 1 to 10</label>
       </div>
       <input type="text" id='term' name='term' onChange={handleChange} />
       <Result secretNum={secretNum} term={term}/>
