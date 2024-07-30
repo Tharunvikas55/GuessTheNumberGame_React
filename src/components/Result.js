@@ -9,7 +9,7 @@ const Result = ({secretNum,term}) => {
     else if(term>secretNum)
       res="Higher";
     else if(term ==secretNum)
-      res="Amazing!"
+      res="Amazing! Correct"
     else
     res="Enter a valid input";
   }
