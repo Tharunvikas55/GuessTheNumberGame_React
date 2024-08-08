@@ -11,7 +11,7 @@ const Result = ({secretNum,term}) => {
     else if(term ==secretNum)
       res="Amazing! Correct"
     else
-    res="Enter a valid input";
+    res="Enter valid input";
   }
   useEffect(() => {
     if (term == secretNum) {
